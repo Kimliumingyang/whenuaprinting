@@ -14,7 +14,7 @@ The quote form validates contact details and prepares a complete email in the vi
 
 ## Publish with GitHub Pages
 
-In repository Settings → Pages, choose Deploy from a branch, branch `main`, folder `/ (root)`, then Save. GitHub provides the published URL and deployment status.
+The repository includes `.github/workflows/pages.yml` to publish all four pages together on pushes to `main`. In Settings → Pages, select GitHub Actions as the build source. The Publish Whenua website workflow reports the deployment result and published URL. `.nojekyll` also supports static branch publishing if that source is retained.
 
 Keep the `assets`, `styles` and `scripts` folders next to `index.html`.
 
