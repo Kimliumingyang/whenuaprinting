@@ -44,4 +44,4 @@ Flyer prices: A5 500/$89, 1000/$139, 2000/$288; A4 500/$134, 1000/$230, 2000/$53
 
 `about.html` implements the supplied About us layout with the split hero, vertical heading, four story paragraphs, logo watermark and three review cards. It is linked from every page and included in the deployment workflow. Styles are in `styles/about.css`.
 
-The two reference photographs have not been uploaded; the page currently uses crops of the original delivery banner. Review cards are explicitly labelled as sample testimonials from the supplied design pending confirmation of authentic customer feedback.
+The original About us photographs are connected: `assets/about-service.jpg` for the customer handover and `assets/about-delivery.jpg` for the delivery section. Review cards are explicitly labelled as sample testimonials from the supplied design pending confirmation of authentic customer feedback.
