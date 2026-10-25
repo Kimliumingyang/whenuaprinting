@@ -11,7 +11,7 @@ function openQuote(product) {
   quoteDialog.showModal();
 }
 document.querySelectorAll('.quote-open').forEach(button => {
-  button.addEventListener('click', () => openQuote(button.closest('.custom-card') ? 'Something else' : undefined));
+  button.addEventListener('click', () => openQuote(button.dataset.quoteProduct || (button.closest('.custom-card') ? 'Something else' : undefined)));
 });
 document.querySelectorAll('[data-product]').forEach(card => {
   card.addEventListener('click', event => {
@@ -81,9 +81,10 @@ function renderSearch() {
   matches.forEach(name => {
     const li = document.createElement('li');
     const link = document.createElement('a');
-    link.href = '#quote';
+    link.href = name === 'Pull up Banners' ? 'pull-up-banners.html' : '#quote';
     link.textContent = name;
     link.addEventListener('click', event => {
+      if (name === 'Pull up Banners') return;
       event.preventDefault();
       searchDialog.close();
       openQuote(name);
