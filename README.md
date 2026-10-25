@@ -39,3 +39,9 @@ Prices and supplied reference prices are transcribed from the design and labelle
 `flyers.html` and `name-badges.html` follow the supplied designs and are included in the Pages deployment package. All five homepage cards and product search entries now open product pages. Each flyer size/quantity and badge type/quantity preselects the enquiry form.
 
 Flyer prices: A5 500/$89, 1000/$139, 2000/$288; A4 500/$134, 1000/$230, 2000/$534. Badge prices are transcribed exactly from the design, including non-monotonic pin-back/acrylic quantity tiers: magnetic 10/$55, 50/$194; pin-back 50/$39, 10/$65; acrylic 50/$65, 10/$75. The single-piece emergency statement is from the supplied design; quotes confirm availability. The badge special-order wording is corrected from banner to name badges. Unuploaded lifestyle photographs are represented by the existing original artwork and detail views.
+
+## About us
+
+`about.html` implements the supplied About us layout with the split hero, vertical heading, four story paragraphs, logo watermark and three review cards. It is linked from every page and included in the deployment workflow. Styles are in `styles/about.css`.
+
+The two reference photographs have not been uploaded; the page currently uses crops of the original delivery banner. Review cards are explicitly labelled as sample testimonials from the supplied design pending confirmation of authentic customer feedback.

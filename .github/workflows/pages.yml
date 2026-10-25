@@ -30,13 +30,14 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p _site
-          cp index.html business-cards.html posters.html pull-up-banners.html flyers.html name-badges.html _site/
+          cp index.html business-cards.html posters.html pull-up-banners.html flyers.html name-badges.html about.html _site/
           cp -R assets styles scripts _site/
           touch _site/.nojekyll
           test -s _site/business-cards.html
           test -s _site/posters.html
           test -s _site/flyers.html
           test -s _site/name-badges.html
+          test -s _site/about.html
       - name: Upload website
         uses: actions/upload-pages-artifact@v3
         with:
