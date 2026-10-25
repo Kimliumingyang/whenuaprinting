@@ -4,14 +4,16 @@ const productSelect = document.getElementById('product');
 const emailStatus = document.getElementById('emailStatus');
 const menuToggle = document.getElementById('menuToggle');
 const siteNav = document.getElementById('siteNav');
-function openQuote(product) {
+function openQuote(product, options = {}) {
   if (product) productSelect.value = product;
+  if (options.quoteQuantity) document.getElementById('quantity').value = options.quoteQuantity;
+  if (options.quoteDetails) document.getElementById('details').value = options.quoteDetails;
   emailStatus.textContent = '';
   document.getElementById('enquiryFallback').hidden = true;
   quoteDialog.showModal();
 }
 document.querySelectorAll('.quote-open').forEach(button => {
-  button.addEventListener('click', () => openQuote(button.dataset.quoteProduct || (button.closest('.custom-card') ? 'Something else' : undefined)));
+  button.addEventListener('click', () => openQuote(button.dataset.quoteProduct || (button.closest('.custom-card') ? 'Something else' : undefined), button.dataset));
 });
 document.querySelectorAll('[data-product]').forEach(card => {
   card.addEventListener('click', event => {
@@ -73,6 +75,7 @@ document.getElementById('copyEnquiry').addEventListener('click', async () => {
 const searchDialog = document.getElementById('searchDialog');
 const searchInput = document.getElementById('searchInput');
 const searchResults = document.getElementById('searchResults');
+const productPages = { 'Business Cards': 'business-cards.html', 'Posters': 'posters.html', 'Pull up Banners': 'pull-up-banners.html' };
 const productNames = Array.from(productSelect.options).map(option => option.value).filter(name => name !== 'Something else');
 function renderSearch() {
   const query = searchInput.value.trim().toLowerCase();
@@ -81,10 +84,10 @@ function renderSearch() {
   matches.forEach(name => {
     const li = document.createElement('li');
     const link = document.createElement('a');
-    link.href = name === 'Pull up Banners' ? 'pull-up-banners.html' : '#quote';
+    link.href = productPages[name] || '#quote';
     link.textContent = name;
     link.addEventListener('click', event => {
-      if (name === 'Pull up Banners') return;
+      if (productPages[name]) return;
       event.preventDefault();
       searchDialog.close();
       openQuote(name);
