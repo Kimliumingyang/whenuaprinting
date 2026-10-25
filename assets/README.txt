@@ -10,6 +10,6 @@ posters.jpg         Room to Grow poster
 name-badges.jpg     Name badges
 quote-banner.jpg   Bottom stationery banner
 
-The three original logo files have been uploaded and connected. Banner and product images are still needed.
+The three original logo files have been uploaded and connected. Banner and all five product images are connected.
 The page loads the original images automatically when files are uploaded under these names.
-Until then, text logos and external temporary photographs remain as fallbacks.
+The enquiry background currently reuses business-cards.jpg; supply the original enquiry photograph and footer fern artwork to finish matching those areas.
