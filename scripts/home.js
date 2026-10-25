@@ -7,6 +7,7 @@ const siteNav = document.getElementById('siteNav');
 function openQuote(product) {
   if (product) productSelect.value = product;
   emailStatus.textContent = '';
+  document.getElementById('enquiryFallback').hidden = true;
   quoteDialog.showModal();
 }
 document.querySelectorAll('.quote-open').forEach(button => {
@@ -35,12 +36,39 @@ menuToggle.addEventListener('click', () => {
 siteNav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
 document.addEventListener('keydown', event => { if (event.key === 'Escape') closeMenu(); });
 window.matchMedia('(min-width: 761px)').addEventListener('change', closeMenu);
-document.getElementById('quoteForm').addEventListener('submit', event => {
+const quoteForm = document.getElementById('quoteForm');
+const enquiryFallback = document.getElementById('enquiryFallback');
+const enquiryText = document.getElementById('enquiryText');
+function enquiryMessage() {
+  return `Hello Whenua Printing,\n\nI’d like a quote for the following project:\n\nName: ${document.getElementById('name').value.trim()}\nEmail: ${document.getElementById('email').value.trim()}\nPhone: ${document.getElementById('phone').value.trim() || 'Not provided'}\nProduct: ${productSelect.value}\nQuantity: ${document.getElementById('quantity').value}\n\nProject details:\n${document.getElementById('details').value.trim()}\n\nPlease confirm pricing, delivery costs and turnaround. Thank you!`;
+}
+quoteForm.addEventListener('submit', event => {
   event.preventDefault();
-  if (!event.currentTarget.reportValidity()) return;
-  const body = `Name: ${document.getElementById('name').value}\nProduct: ${productSelect.value}\nQuantity: ${document.getElementById('quantity').value}\n\n${document.getElementById('details').value}`;
-  window.location.href = `mailto:whenuaprinting@gmail.com?subject=${encodeURIComponent('Printing quote enquiry')}&body=${encodeURIComponent(body)}`;
-  emailStatus.textContent = 'Your email app has been requested. Please send the message there. If it does not open, email whenuaprinting@gmail.com directly. This form does not send or store your enquiry.';
+  if (!quoteForm.reportValidity()) return;
+  const body = enquiryMessage();
+  enquiryText.value = body;
+  enquiryFallback.hidden = false;
+  // Keep long enquiries intact rather than risk truncating a mailto URL.
+  if (encodeURIComponent(body).length > 1800) {
+    emailStatus.textContent = 'Your enquiry is ready. Use Copy enquiry and paste it into an email to whenuaprinting@gmail.com.';
+    return;
+  }
+  window.location.href = `mailto:whenuaprinting@gmail.com?subject=${encodeURIComponent('Printing quote enquiry — ' + productSelect.value)}&body=${encodeURIComponent(body)}`;
+  emailStatus.textContent = 'Continue in your email app and press Send. If it does not open, use Copy enquiry and email the message to whenuaprinting@gmail.com. Your enquiry has not been sent by this website.';
+});
+document.getElementById('copyEnquiry').addEventListener('click', async () => {
+  if (!quoteForm.reportValidity()) return;
+  const body = enquiryMessage();
+  enquiryText.value = body;
+  enquiryFallback.hidden = false;
+  try {
+    await navigator.clipboard.writeText(body);
+    emailStatus.textContent = 'Enquiry copied. Paste it into an email to whenuaprinting@gmail.com and send it there.';
+  } catch {
+    enquiryText.focus();
+    enquiryText.select();
+    emailStatus.textContent = 'Select and copy the message below, then email it to whenuaprinting@gmail.com.';
+  }
 });
 const searchDialog = document.getElementById('searchDialog');
 const searchInput = document.getElementById('searchInput');

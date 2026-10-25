@@ -11,3 +11,5 @@
 .footer-dino{mix-blend-mode:multiply}.footer-wordmark{mix-blend-mode:screen}.footer-wordmark img{filter:grayscale(1) invert(1) brightness(4)}.site-footer:before{content:none}
 .logo-crop img,.footer-dino img,.footer-wordmark img,.mini-dino img{height:auto}
 .footer-dino{mix-blend-mode:screen}.footer-dino img{mix-blend-mode:normal;filter:grayscale(1) invert(1) sepia(1) saturate(5) hue-rotate(25deg) brightness(1.3)}
+
+.enquiry-actions{display:flex;flex-wrap:wrap;gap:12px}.enquiry-actions .button-secondary{background:#e7eedf;color:#245c2c}.enquiry-actions .button-secondary:hover{background:#d6e4c9}#enquiryFallback{font-size:14px;line-height:1.6;margin-top:15px}#enquiryFallback a{text-decoration:underline}#enquiryText{display:block;margin-top:10px;min-height:190px}

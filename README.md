@@ -10,7 +10,7 @@ Open `index.html` in your browser, or run from this folder:
 python3 -m http.server 3000
 ```
 
-The quote form prepares an email in the visitor’s email application. The visitor must send it there; this site does not store enquiries or process payments.
+The quote form validates contact details and prepares a complete email in the visitor’s email application. A Copy enquiry option supports webmail and long messages. The visitor must send it there; this site does not store enquiries or process payments.
 
 ## Publish with GitHub Pages
 
