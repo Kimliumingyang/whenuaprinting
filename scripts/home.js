@@ -75,7 +75,7 @@ document.getElementById('copyEnquiry').addEventListener('click', async () => {
 const searchDialog = document.getElementById('searchDialog');
 const searchInput = document.getElementById('searchInput');
 const searchResults = document.getElementById('searchResults');
-const productPages = { 'Business Cards': 'business-cards.html', 'Posters': 'posters.html', 'Pull up Banners': 'pull-up-banners.html' };
+const productPages = { 'Flyers': 'flyers.html', 'Name badges': 'name-badges.html', 'Business Cards': 'business-cards.html', 'Posters': 'posters.html', 'Pull up Banners': 'pull-up-banners.html' };
 const productNames = Array.from(productSelect.options).map(option => option.value).filter(name => name !== 'Something else');
 function renderSearch() {
   const query = searchInput.value.trim().toLowerCase();

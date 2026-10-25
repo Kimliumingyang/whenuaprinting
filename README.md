@@ -33,3 +33,9 @@ The two product views currently use the supplied banner image and a CSS detail c
 `business-cards.html` and `posters.html` implement the supplied pricing designs. Shared pricing styles are in `styles/pricing.css`. Homepage product cards and search results link to their respective pages. Clicking a quantity opens an enquiry with the product, quantity and relevant specification already filled in.
 
 Prices and supplied reference prices are transcribed from the design and labelled indicative NZD. Unknown `$XXX` reference-price placeholders are omitted. The poster breadcrumb is corrected to Posters; the A0 section’s final row is labelled A0 · 10 pcs. Final quotes confirm GST and delivery. The extra reference-design photographs are not yet in the repository, so pages use the original uploaded product artwork; the second business card view is a detail crop.
+
+## Flyers and staff name badges
+
+`flyers.html` and `name-badges.html` follow the supplied designs and are included in the Pages deployment package. All five homepage cards and product search entries now open product pages. Each flyer size/quantity and badge type/quantity preselects the enquiry form.
+
+Flyer prices: A5 500/$89, 1000/$139, 2000/$288; A4 500/$134, 1000/$230, 2000/$534. Badge prices are transcribed exactly from the design, including non-monotonic pin-back/acrylic quantity tiers: magnetic 10/$55, 50/$194; pin-back 50/$39, 10/$65; acrylic 50/$65, 10/$75. The single-piece emergency statement is from the supplied design; quotes confirm availability. The badge special-order wording is corrected from banner to name badges. Unuploaded lifestyle photographs are represented by the existing original artwork and detail views.
