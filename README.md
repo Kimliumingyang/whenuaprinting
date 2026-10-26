@@ -71,3 +71,7 @@ All green homepage enquiry buttons open the shared modal. Header envelope icons 
 ## Terms and Conditions
 
 `terms-and-conditions.html` is extracted directly from the user-provided Copy of WP TandCs.docx, dated 25 October 2026. It contains 137 nonempty source paragraphs, 14 main sections and 7 subsections. Rendered article wording is checked against the complete DOCX text with only whitespace normalised. All footer links, preview selection and deployment packaging are connected. No legal wording was invented or rewritten.
+
+## Homepage FAQs
+
+Ten user-provided questions and answers are reproduced in the native details/summary accordion at `index.html#faqs`, directly after How it works. The first answer is initially expanded; the named group opens one answer at a time in supported browsers. Keyboard access works without JavaScript. Footer FAQs links on every page target this section.
