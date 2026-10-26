@@ -15,3 +15,11 @@
 .enquiry-actions{display:flex;flex-wrap:wrap;gap:12px}.enquiry-actions .button-secondary{background:#e7eedf;color:#245c2c}.enquiry-actions .button-secondary:hover{background:#d6e4c9}#enquiryFallback{font-size:14px;line-height:1.6;margin-top:15px}#enquiryFallback a{text-decoration:underline}#enquiryText{display:block;margin-top:10px;min-height:190px}
 
 .form-honeypot{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}.form-service-note{font-size:12px!important;color:#75816e!important}.enquiry-actions button:disabled{opacity:.65;cursor:wait}
+
+/* Product links reveal a consistent vector arrow without moving the caption. */
+.product-card .round-arrow{display:grid;place-items:center;background:#1b5d24;color:#fff;opacity:0;transform:translateX(-5px) scale(.94);transition:opacity .18s ease,transform .18s ease;pointer-events:none}
+.round-arrow svg{width:76%;height:76%}
+.product-card:focus-visible .round-arrow{opacity:1;transform:translateX(0) scale(1)}
+@media(hover:hover) and (pointer:fine){.product-card:hover .round-arrow{opacity:1;transform:translateX(0) scale(1)}}
+@media(hover:none),(pointer:coarse){.product-card .round-arrow{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.product-card .round-arrow{transition:none}}
