@@ -4,3 +4,5 @@
 @media(max-width:760px){.policy-main{width:calc(100% - 48px);font-size:17px;line-height:1.65;margin:40px auto 60px}.policy-main h1{font-size:29px}.policy-main h2{font-size:18px;line-height:1.5;margin-top:30px}.policy-updated{font-size:15px;margin-bottom:30px!important}.policy-main ul{padding-left:17px}}
 @media(max-width:390px){.policy-main{width:calc(100% - 36px);font-size:16px}.policy-main h2{font-size:17px}.policy-main h1{font-size:27px}}
 @media print{.site-header,.site-footer,.skip-link,dialog{display:none!important}.policy-main{width:100%;max-width:none;margin:0;font-size:11pt;line-height:1.4}.policy-main h1{font-size:20pt}.policy-main h2{font-size:12pt;break-after:avoid}.policy-updated{font-size:10pt}body{background:white!important;color:black!important}}
+
+.refund-policy section p+p,.refund-policy .policy-intro p+p{margin-top:24px}@media(max-width:760px){.refund-policy section p+p,.refund-policy .policy-intro p+p{margin-top:18px}}

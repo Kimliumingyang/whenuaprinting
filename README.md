@@ -63,3 +63,7 @@ All green homepage enquiry buttons open the shared modal. Header envelope icons 
 ## Privacy Policy
 
 `privacy-policy.html` reproduces the user-provided policy copy, dated 25 October 2026, with nine sections and supplied contact details. Styles are in `styles/policy.css` with responsive reading widths and print styles. All footer Privacy Policy links and the preview selector are connected; the page is included in the deployment artifact. Refund Policy and Terms and Conditions await user content.
+
+## Refund and cancellation policy
+
+`refund-policy.html` transcribes the supplied six-section policy, dated 26 October 2026, including the DEEP EARTH COLLECTIVE LIMITED trading-name statement and consumer-rights provisions. All footer Refund Policy links, preview selection and the deployment package are connected. The standard footer dinosaur is now white through shared CSS. Terms and Conditions remains pending.
