@@ -28,7 +28,7 @@
 | 全站基础样式 | styles/home.css |
 | 最新全站视觉、导航和页脚 Logo 微调 | styles/refinements.css（最后加载） |
 | 产品总览、产品详情的样式 | styles/products.css / styles/product.css / styles/pricing.css |
-| 全站交互、询价与搜索 | scripts/home.js |
+| 全站交互、询价与搜索 | scripts/quote.js / scripts/navigation.js / scripts/search.js |
 | 推荐商品筛选、详情弹窗 | scripts/products.js |
 | 发布文件清单与部署 | .github/workflows/pages.yml |
 
@@ -78,3 +78,7 @@
 新对话请提供仓库链接，并说：“请先阅读 WEBSITE-MAINTENANCE.md，再基于当前 main 继续修改。”随后说明想增加的服务、要替换的图片和参考设计。维护者应先拉取最新 main，保留用户上传文件，完成适当检查再推送。
 
 本文件帮助延续项目背景，但不能保证任何助手在新对话中自动记得全部聊天，也不代表新会话自动拥有 GitHub 访问权限。
+
+## 2026-10-27 代码整理
+
+HTML、CSS、JavaScript 已统一格式化。原 scripts/home.js 按职责拆为 navigation.js、quote.js、search.js，并按此顺序加载；产品脚本随后加载。完整文件职责见 README.md。格式配置在 .prettierrc.json。此轮整理保留原有样式覆盖顺序与原生询价流程。
