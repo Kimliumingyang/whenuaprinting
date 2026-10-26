@@ -54,54 +54,24 @@ function enquiryMessage() {
   lines.push(`Phone: ${value('phone') || 'Not provided'}`, `Product: ${productSelect.value}`, `Quantity: ${value('quantity')}`, '', 'Project details:', value('details') || 'Not provided', '', 'Please confirm pricing, delivery costs and turnaround. Thank you!');
   return lines.join('\n');
 }
-let sendingEnquiry = false;
-quoteForm.addEventListener('submit', async event => {
-  event.preventDefault();
-  if (!quoteForm.reportValidity() || sendingEnquiry) return;
-  const body = enquiryMessage();
-  if (quoteForm.dataset.delivery === 'direct') {
-    const submitButton = quoteForm.querySelector('[type="submit"]');
-    const copyButton = document.getElementById('copyEnquiry');
-    const payload = new FormData(quoteForm);
-    const replyEmail = document.getElementById('email')?.value.trim();
-    if (replyEmail) payload.set('_replyto', replyEmail);
-    const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 20000);
-    sendingEnquiry = true;
-    submitButton.disabled = true;
-    copyButton.disabled = true;
-    quoteForm.setAttribute('aria-busy', 'true');
-    submitButton.textContent = 'Sending…';
-    emailStatus.textContent = 'Sending your enquiry…';
-    enquiryFallback.hidden = true;
-    try {
-      const response = await fetch(quoteForm.action, { method: 'POST', body: payload, headers: { Accept: 'application/json' }, signal: controller.signal });
-      const result = await response.json();
-      if (!response.ok || !(result.success === true || result.success === 'true')) throw new Error('Submission not accepted');
-      quoteForm.reset();
-      emailStatus.textContent = 'Thank you! Your enquiry has been submitted. We’ll contact you by email or phone.';
-    } catch {
-      enquiryText.value = body;
-      enquiryFallback.hidden = false;
-      emailStatus.textContent = 'We couldn’t confirm your submission. Your details are still here. Please check before retrying, or copy your enquiry and email whenuaprinting@gmail.com.';
-    } finally {
-      clearTimeout(timeout);
-      sendingEnquiry = false;
-      submitButton.disabled = false;
-      copyButton.disabled = false;
-      submitButton.textContent = 'Send enquiry';
-      quoteForm.removeAttribute('aria-busy');
+// FormSubmit auto-response requires a standard form POST, not AJAX.
+quoteForm.addEventListener('submit', event => {
+  if (!quoteForm.reportValidity()) {
+    event.preventDefault();
+    return;
+  }
+  const email = document.getElementById('email')?.value.trim();
+  if (email) {
+    let replyTo = quoteForm.querySelector('input[name="_replyto"]');
+    if (!replyTo) {
+      replyTo = document.createElement('input');
+      replyTo.type = 'hidden';
+      replyTo.name = '_replyto';
+      quoteForm.append(replyTo);
     }
-    return;
+    replyTo.value = email;
   }
-  enquiryText.value = body;
-  enquiryFallback.hidden = false;
-  if (encodeURIComponent(body).length > 1800) {
-    emailStatus.textContent = 'Your enquiry is ready. Use Copy enquiry and paste it into an email to whenuaprinting@gmail.com.';
-    return;
-  }
-  window.location.href = `mailto:whenuaprinting@gmail.com?subject=${encodeURIComponent('Printing quote enquiry — ' + productSelect.value)}&body=${encodeURIComponent(body)}`;
-  emailStatus.textContent = 'Continue in your email app and press Send. If it does not open, use Copy enquiry and email the message to whenuaprinting@gmail.com. Your enquiry has not been sent by this website.';
+  // Leave the browser's native submission and service verification enabled.
 });
 document.getElementById('copyEnquiry').addEventListener('click', async () => {
   if (!quoteForm.reportValidity()) return;
