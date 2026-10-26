@@ -88,3 +88,8 @@
 .standard-footer .footer-brand-column{display:grid;grid-template-columns:minmax(0,max-content);align-content:start;min-width:0}
 .standard-footer .footer-brand{contain:inline-size;width:100%;max-width:none;min-height:0;height:auto;aspect-ratio:393/131}
 .standard-footer .footer-logo-image{width:100%;height:auto}
+
+/* Reference size requested for the 1440px desktop layout. */
+@media(min-width:1301px){
+ .standard-footer .footer-brand{width:342px;max-width:100%}
+}
