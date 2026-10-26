@@ -17,3 +17,5 @@ All three policy pages are now connected: Privacy, Refund and Cancellation, and 
 Products overview now exists at `products.html`. All top-level Products navigation and the homepage Explore more link lead there. The Something else section uses existing customer service photography and a custom enquiry action; additional product images and the detailed Figma gallery design are still pending.
 
 The 22 uploaded Wechat product concepts are now connected to the Products page under Something else, with category filters, search, detail previews and enquiry selection. All original images were visually reviewed; current gallery supersedes the earlier temporary customer-service image. Further Figma refinements can be applied later.
+
+Latest catalogue refinement: the homepage green card now uses the supplied “There’s more we can make / Explore more” design and links to the merchandise section. On Products, the print-essentials heading and square photo cards match the merchandise collection; a pale-green “Let’s explore your idea” sixth card bridges to the custom gallery. The old duplicated top-right callout is removed.

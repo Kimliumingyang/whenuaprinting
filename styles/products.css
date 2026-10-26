@@ -12,3 +12,29 @@
 @media(max-width:390px){.merch-container{width:calc(100% - 36px)}.merch-card-copy{padding:22px}.merch-heading h2{font-size:38px}.merch-filter{font-size:11px;padding:10px 12px}.merch-final{padding:25px}.merch-final .button{min-width:0;font-size:14px}}
 @media(hover:none){.merch-view-label{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){.merch-card,.merch-image-button img,.merch-view-label{transition:none}}
+
+/* Print essentials now share the merchandise collection’s visual language. */
+.catalogue-intro.catalogue-heading{grid-template-columns:1.1fr 1fr;gap:80px;align-items:end;margin:65px auto 45px}
+.catalogue-heading h1{font-size:60px;line-height:1.05;letter-spacing:-2.2px;color:#244d30;margin:22px 0 0}
+.catalogue-heading h1 em{font-family:Georgia,serif;font-weight:400;letter-spacing:-1.5px}
+.catalogue-heading .eyebrow{font-size:11px;letter-spacing:1.8px;color:#749064;line-height:1.8;margin:0}
+.catalogue-heading .catalogue-intro-copy p{font-size:18px;line-height:1.7;color:#6e8064;max-width:none;margin:0 0 18px}
+.catalogue-heading .catalogue-intro-copy .catalogue-range-note{font-size:13px;line-height:1.7;color:#829376;margin:0}
+.products-page .catalogue-section{padding-bottom:70px}
+.products-page .catalogue-section .product-grid{gap:30px}
+.products-page .catalogue-section .product-card{border:1px solid #e1e6d9;border-radius:20px;box-shadow:0 3px 10px #2d4c2610}
+.products-page .catalogue-section .product-photo{aspect-ratio:1;object-fit:contain;background:#ede9df}
+.products-page .catalogue-section .product-caption{min-height:110px;padding:22px 24px;background:white}
+.products-page .catalogue-section .product-caption strong{font-size:24px;line-height:1.2;letter-spacing:-.6px;color:#284f30}
+.products-page .catalogue-section .product-caption small{font-size:14px;line-height:1.65;color:#819076;margin-top:10px}
+.catalogue-custom-link.catalogue-bridge{align-self:stretch;margin:0;background:#e8efdd;border:1px solid #cfdec1;border-radius:20px;padding:40px;display:flex;flex-direction:column;justify-content:center}
+.catalogue-bridge>span{font-size:12px;font-weight:bold;letter-spacing:.8px;color:#7d9470;margin:0 0 24px}
+.catalogue-bridge h2{font:400 43px/1.1 Georgia,serif;letter-spacing:-1px;color:#2f5833;margin:0 0 22px}
+.catalogue-bridge>p{font-size:15px;line-height:1.7;color:#7f9071;margin:0 0 30px}
+.catalogue-bridge strong{font-size:16px;border-top:1px solid #c4d5b4;padding-top:20px;color:#38643a}
+.catalogue-bridge:hover{background:#dfead2}
+@media(max-width:1300px){.catalogue-intro.catalogue-heading{gap:55px}.catalogue-heading h1{font-size:50px}.catalogue-heading .catalogue-intro-copy p{font-size:16px}.catalogue-heading .catalogue-intro-copy .catalogue-range-note{font-size:12px}.products-page .catalogue-section .product-caption{padding:20px}.products-page .catalogue-section .product-caption strong{font-size:22px}.products-page .catalogue-section .product-caption small{font-size:13px}.catalogue-custom-link.catalogue-bridge{padding:30px}.catalogue-bridge h2{font-size:37px}.catalogue-bridge>p{font-size:14px}}
+@media(max-width:1024px){.catalogue-intro.catalogue-heading{gap:35px;margin-top:50px}.catalogue-heading h1{font-size:42px}.catalogue-heading .catalogue-intro-copy p{font-size:15px}.catalogue-heading .catalogue-intro-copy .catalogue-range-note{font-size:12px}.products-page .catalogue-section .product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.catalogue-bridge h2{font-size:38px}.catalogue-custom-link.catalogue-bridge{padding:30px}}
+@media(max-width:760px){.catalogue-intro.catalogue-heading{grid-template-columns:1fr;gap:25px;margin:35px auto 30px}.catalogue-heading h1{font-size:45px;letter-spacing:-1.8px}.catalogue-heading .catalogue-intro-copy p{font-size:16px}.products-page .catalogue-section .product-caption{padding:20px}.products-page .catalogue-section .product-caption strong{font-size:21px}.products-page .catalogue-section .product-caption small{font-size:13px}.catalogue-custom-link.catalogue-bridge{padding:26px}.catalogue-bridge h2{font-size:33px}.catalogue-bridge>span{font-size:10px;margin-bottom:22px}.catalogue-bridge>p{font-size:13px;margin-bottom:25px}.catalogue-bridge strong{font-size:14px}.products-page .catalogue-section{padding-bottom:45px}}
+@media(max-width:480px){.products-page .catalogue-section .product-grid{grid-template-columns:1fr;gap:25px}.products-page .catalogue-section .product-caption{padding:23px;min-height:100px}.products-page .catalogue-section .product-caption strong{font-size:25px}.products-page .catalogue-section .product-caption small{font-size:14px}.catalogue-custom-link.catalogue-bridge{padding:34px}.catalogue-bridge h2{font-size:42px}.catalogue-bridge>span{font-size:12px}.catalogue-bridge>p{font-size:15px}.catalogue-bridge strong{font-size:16px}}
+@media(max-width:390px){.catalogue-heading h1{font-size:38px}.products-page .catalogue-section .product-caption{padding:22px}}
