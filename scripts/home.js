@@ -58,6 +58,8 @@ quoteForm.addEventListener('submit', async event => {
     const submitButton = quoteForm.querySelector('[type="submit"]');
     const copyButton = document.getElementById('copyEnquiry');
     const payload = new FormData(quoteForm);
+    const replyEmail = document.getElementById('email')?.value.trim();
+    if (replyEmail) payload.set('_replyto', replyEmail);
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 20000);
     sendingEnquiry = true;
@@ -72,7 +74,7 @@ quoteForm.addEventListener('submit', async event => {
       const result = await response.json();
       if (!response.ok || !(result.success === true || result.success === 'true')) throw new Error('Submission not accepted');
       quoteForm.reset();
-      emailStatus.textContent = 'Thank you! Your enquiry has been submitted. We’ll contact you by phone.';
+      emailStatus.textContent = 'Thank you! Your enquiry has been submitted. We’ll contact you by email or phone.';
     } catch {
       enquiryText.value = body;
       enquiryFallback.hidden = false;
