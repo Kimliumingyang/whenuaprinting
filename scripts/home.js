@@ -129,3 +129,9 @@ siteNav.querySelectorAll('a').forEach(link => {
   if (destination === currentPage) link.setAttribute('aria-current', 'page');
   else if (destination === 'products.html' && printPages.includes(currentPage)) link.setAttribute('aria-current', 'location');
 });
+
+const mobileSearch = document.querySelector('.mobile-search');
+if (mobileSearch) mobileSearch.addEventListener('click', () => {
+  closeMenu();
+  document.getElementById('searchButton').click();
+});
