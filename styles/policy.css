@@ -6,3 +6,5 @@
 @media print{.site-header,.site-footer,.skip-link,dialog{display:none!important}.policy-main{width:100%;max-width:none;margin:0;font-size:11pt;line-height:1.4}.policy-main h1{font-size:20pt}.policy-main h2{font-size:12pt;break-after:avoid}.policy-updated{font-size:10pt}body{background:white!important;color:black!important}}
 
 .refund-policy section p+p,.refund-policy .policy-intro p+p{margin-top:24px}@media(max-width:760px){.refund-policy section p+p,.refund-policy .policy-intro p+p{margin-top:18px}}
+
+.terms-policy h3{font-size:inherit;font-weight:700;line-height:1.45;margin:26px 0 0}.terms-policy p+p{margin-top:18px}.terms-policy h2{margin-top:40px}.terms-policy li{margin:0}.terms-policy ul+p{margin-top:16px}

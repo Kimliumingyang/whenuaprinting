@@ -11,3 +11,5 @@ The standard three-column footer is applied to all public pages. The user will s
 Privacy Policy is now transcribed from the supplied design and live at `privacy-policy.html`; its footer links are connected across all pages. Refund Policy and Terms and Conditions remain pending user-provided content.
 
 Refund & Cancellation Policy has been added at `refund-policy.html` and connected across all footers. Footer dinosaur is white. Only Terms and Conditions copy and confirmed social account URLs remain pending in this footer work.
+
+All three policy pages are now connected: Privacy, Refund and Cancellation, and Terms and Conditions. Terms text comes from the user-provided DOCX. Social account URLs still await confirmation.

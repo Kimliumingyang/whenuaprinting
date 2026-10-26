@@ -67,3 +67,7 @@ All green homepage enquiry buttons open the shared modal. Header envelope icons 
 ## Refund and cancellation policy
 
 `refund-policy.html` transcribes the supplied six-section policy, dated 26 October 2026, including the DEEP EARTH COLLECTIVE LIMITED trading-name statement and consumer-rights provisions. All footer Refund Policy links, preview selection and the deployment package are connected. The standard footer dinosaur is now white through shared CSS. Terms and Conditions remains pending.
+
+## Terms and Conditions
+
+`terms-and-conditions.html` is extracted directly from the user-provided Copy of WP TandCs.docx, dated 25 October 2026. It contains 137 nonempty source paragraphs, 14 main sections and 7 subsections. Rendered article wording is checked against the complete DOCX text with only whitespace normalised. All footer links, preview selection and deployment packaging are connected. No legal wording was invented or rewritten.
