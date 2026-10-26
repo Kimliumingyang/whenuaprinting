@@ -15,3 +15,5 @@ Refund & Cancellation Policy has been added at `refund-policy.html` and connecte
 All three policy pages are now connected: Privacy, Refund and Cancellation, and Terms and Conditions. Terms text comes from the user-provided DOCX. Social account URLs still await confirmation.
 
 Products overview now exists at `products.html`. All top-level Products navigation and the homepage Explore more link lead there. The Something else section uses existing customer service photography and a custom enquiry action; additional product images and the detailed Figma gallery design are still pending.
+
+The 22 uploaded Wechat product concepts are now connected to the Products page under Something else, with category filters, search, detail previews and enquiry selection. All original images were visually reviewed; current gallery supersedes the earlier temporary customer-service image. Further Figma refinements can be applied later.
