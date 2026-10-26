@@ -10,7 +10,12 @@ function openQuote(product, options = {}) {
   if (options.quoteDetails) document.getElementById('details').value = options.quoteDetails;
   emailStatus.textContent = '';
   document.getElementById('enquiryFallback').hidden = true;
-  quoteDialog.showModal();
+  if (quoteDialog) {
+    quoteDialog.showModal();
+  } else {
+    document.getElementById('quoteForm').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    document.getElementById('name').focus({ preventScroll: true });
+  }
 }
 document.querySelectorAll('.quote-open').forEach(button => {
   button.addEventListener('click', () => openQuote(button.dataset.quoteProduct || (button.closest('.custom-card') ? 'Something else' : undefined), button.dataset));
