@@ -59,3 +59,7 @@ Visitor details are sent to FormSubmit; the homepage discloses this. No mail pas
 Styles are in `styles/quote.css`; submission logic stays shared in `scripts/home.js`. Success, validation and failure retention have been tested with mocked service responses; real delivery still depends on FormSubmit activation. No attachment input is shown because file upload transport has not been integrated. Screenshot email-app buttons have been replaced with one direct Send enquiry button plus the shared Copy enquiry fallback.
 
 All green homepage enquiry buttons open the shared modal. Header envelope icons across the website open `quote.html`. Product-specific quote buttons and price tiers retain the product, quantity and specifications when opening the shared modal.
+
+## Privacy Policy
+
+`privacy-policy.html` reproduces the user-provided policy copy, dated 25 October 2026, with nine sections and supplied contact details. Styles are in `styles/policy.css` with responsive reading widths and print styles. All footer Privacy Policy links and the preview selector are connected; the page is included in the deployment artifact. Refund Policy and Terms and Conditions await user content.

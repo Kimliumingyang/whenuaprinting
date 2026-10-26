@@ -7,3 +7,5 @@ The homepage green Something else card follows the supplied design, including th
 ## Standard footer and policies
 
 The standard three-column footer is applied to all public pages. The user will supply Refund Policy, Privacy Policy and Term and Conditions content; create standalone pages and replace the matching data-policy labels with real links once provided. Do not invent policy text. Facebook and Instagram are currently non-linked labels pending confirmed account URLs. FAQs currently links to the existing How it works section.
+
+Privacy Policy is now transcribed from the supplied design and live at `privacy-policy.html`; its footer links are connected across all pages. Refund Policy and Terms and Conditions remain pending user-provided content.
