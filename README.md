@@ -10,7 +10,7 @@ Open `index.html` in your browser, or run from this folder:
 python3 -m http.server 3000
 ```
 
-The quote form validates contact details and prepares a complete email in the visitor’s email application. A Copy enquiry option supports webmail and long messages. The visitor must send it there; this site does not store enquiries or process payments.
+Enquiry forms submit directly via FormSubmit after destination activation. Copy enquiry remains available as a fallback. The site does not process payments.
 
 ## Publish with GitHub Pages
 
@@ -48,12 +48,14 @@ The original About us photographs are connected: `assets/about-service.jpg` for 
 
 ## Homepage direct enquiry email
 
-Only the homepage form sends directly via FormSubmit AJAX to `whenuaprinting@gmail.com`. It requires name, customer email address, phone number, company name, product and quantity; project details are optional. The mailbox owner must activate the FormSubmit destination using the confirmation email triggered by the first real submission. Check spam as well. End-to-end email delivery is not verified until activation and a real mailbox receipt are confirmed. Frontend success means the service accepted the submission, not proof of mailbox delivery.
+The homepage, all product enquiry modals and the standalone enquiry page send directly via FormSubmit AJAX to `whenuaprinting@gmail.com`. It requires name, customer email address, phone number, company name, product and quantity; project details are optional. The mailbox owner must activate the FormSubmit destination using the confirmation email triggered by the first real submission. Check spam as well. End-to-end email delivery is not verified until activation and a real mailbox receipt are confirmed. Frontend success means the service accepted the submission, not proof of mailbox delivery.
 
-Visitor details are sent to FormSubmit; the homepage discloses this. No mail password or API secret is embedded. Failed or unconfirmed submissions retain the entered values and offer a copy/email fallback. Product-page forms retain their existing email-app workflow and email field. The customer email is included as the Reply-To address. Automated tests mock the external service. An authorised real delivery test was attempted, but the environment proxy rejected the FormSubmit connection before submission; actual delivery remains unverified.
+Visitor details are sent to FormSubmit; the homepage discloses this. No mail password or API secret is embedded. Failed or unconfirmed submissions retain the entered values and offer a copy/email fallback. Product-page forms now share the homepage modal fields, styles and direct submission workflow; each defaults to its own product. The customer email is included as the Reply-To address. Automated tests mock the external service. An authorised real delivery test was attempted, but the environment proxy rejected the FormSubmit connection before submission; actual delivery remains unverified.
 
 ## Standalone enquiry page
 
 `quote.html` follows the supplied banner/intro/form-card design, using the same required fields and FormSubmit delivery handler as the homepage modal. Project details remain optional. The customer email is used for Reply-To. It is linked from the homepage lower enquiry button and every page footer, included in the preview selector, and packaged by the Pages workflow. The homepage banner still opens its modal.
 
 Styles are in `styles/quote.css`; submission logic stays shared in `scripts/home.js`. Success, validation and failure retention have been tested with mocked service responses; real delivery still depends on FormSubmit activation. No attachment input is shown because file upload transport has not been integrated. Screenshot email-app buttons have been replaced with one direct Send enquiry button plus the shared Copy enquiry fallback.
+
+All green homepage enquiry buttons open the shared modal. Header envelope icons across the website open `quote.html`. Product-specific quote buttons and price tiers retain the product, quantity and specifications when opening the shared modal.
