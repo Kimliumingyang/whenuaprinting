@@ -23,3 +23,16 @@
 @media(hover:hover) and (pointer:fine){.product-card:hover .round-arrow{opacity:1;transform:translateX(0) scale(1)}}
 @media(hover:none),(pointer:coarse){.product-card .round-arrow{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){.product-card .round-arrow{transition:none}}
+
+/* Fluid Something else card, ready for the future product gallery. */
+.custom-card{container-type:inline-size;padding:0;min-height:0;border-radius:clamp(16px,2vw,28px);background:#437b39;display:block}
+.custom-card-inner{padding:15cqw 10cqw 12cqw}
+.custom-card .custom-eyebrow{font-size:3.6cqw;line-height:1.2;letter-spacing:.65cqw;color:#b8ff76;margin:0 0 11cqw;font-weight:700}
+.custom-card h2{font:700 7.5cqw/1.12 Georgia,serif;letter-spacing:-.12cqw;white-space:normal;margin:0 0 1cqw;color:white}
+.custom-card p{font:400 3.5cqw/1.35 Arial,sans-serif;color:white;margin:0 0 10.5cqw}
+.custom-card .custom-button{display:flex;align-items:center;justify-content:center;gap:4cqw;width:72%;max-width:100%;min-height:12cqw;padding:2.4cqw 3cqw;border-radius:4.6cqw;font:700 3.5cqw/1.2 Arial,sans-serif;background:white;color:#205f2a;border:0;transition:background .18s ease,box-shadow .18s ease}
+.custom-card .custom-button:hover{background:#f0f7e9;box-shadow:0 4px 14px #143c2520}
+.custom-card .mini-dino{display:block;position:relative;flex:none;overflow:hidden;width:11.5cqw;height:6.58cqw;mix-blend-mode:multiply}
+.custom-card .mini-dino img{width:180.72%;max-width:none;height:auto;position:absolute;left:-34.34%;top:-97.89%}
+@media(max-width:760px){.custom-card .custom-button{width:100%}.custom-card-inner{padding:13cqw 9cqw}.custom-card h2{font-size:9cqw}.custom-card p{font-size:4.5cqw;line-height:1.4}.custom-card .custom-eyebrow{font-size:4cqw;letter-spacing:.6cqw}.custom-card .custom-button{font-size:4.5cqw;min-height:16cqw;border-radius:5cqw}.custom-card .mini-dino{width:15cqw;height:8.58cqw}}
+@media(prefers-reduced-motion:reduce){.custom-card .custom-button{transition:none}}
