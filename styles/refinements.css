@@ -83,3 +83,8 @@
  .site-header .header-actions{gap:4px}.site-header .icon-button{width:36px}
  .site-header .desktop-nav{left:-18px;right:-18px;padding-inline:18px}
 }
+
+/* Let the existing tagline determine the logo width without changing its type. */
+.standard-footer .footer-brand-column{display:grid;grid-template-columns:minmax(0,max-content);align-content:start;min-width:0}
+.standard-footer .footer-brand{contain:inline-size;width:100%;max-width:none;min-height:0;height:auto;aspect-ratio:393/131}
+.standard-footer .footer-logo-image{width:100%;height:auto}
