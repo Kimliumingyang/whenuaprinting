@@ -4,3 +4,15 @@
 @media(max-width:760px){.quote-hero{min-height:280px}.quote-hero .hero-content{padding:40px 0}.enquiry-layout{width:calc(100% - 48px);grid-template-columns:1fr;gap:30px;margin:40px auto 45px}.enquiry-intro{padding:0}.enquiry-eyebrow{margin-bottom:20px}.enquiry-intro h2{font-size:43px;margin-bottom:22px}.enquiry-intro h2 br{display:none}.enquiry-intro>p:not(.enquiry-eyebrow){max-width:100%}.personal-note{max-width:100%;margin-top:25px;padding-top:20px}.enquiry-dino{display:none}.enquiry-card{padding:28px;border-radius:23px}.enquiry-card h2{font-size:25px}.quote-fields{gap:20px}.enquiry-card input,.enquiry-card select,.enquiry-card textarea{font-size:16px}.inbox-note{font-size:11px}.inbox-note strong{font-size:12px}}
 @media(max-width:480px){.quote-fields{grid-template-columns:1fr}.quote-fields .full-width{grid-column:auto}.enquiry-card{padding:24px 20px}.enquiry-card h2{font-size:24px}.enquiry-card .enquiry-actions{justify-content:stretch}.enquiry-card .button{flex:1;font-size:14px}.quote-fields .form-field label{font-size:13px}}
 @media(max-width:390px){.enquiry-layout{width:calc(100% - 36px)}.enquiry-intro h2{font-size:38px}.enquiry-card{padding:23px 18px}.enquiry-card .button{padding-inline:12px;font-size:13px}.inbox-note strong{font-size:11px}}
+
+/* Prominent, actionable email contact beside the on-site enquiry flow. */
+.enquiry-card .inbox-note{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:15px 24px;min-height:85px;margin-top:26px;padding:20px 22px;border-radius:14px;background:#f0f6eb}
+.inbox-explanation{font-size:14px;line-height:1.6;color:#8aa07d;flex:1 1 190px}
+.inbox-email{display:inline-flex;align-items:center;gap:10px;color:#3d6943;max-width:100%;padding:7px 0;min-height:44px;text-decoration:none;flex:0 1 auto}
+.inbox-email svg{width:27px;height:27px;flex:none}
+.enquiry-card .inbox-email strong{font-size:20px;line-height:1.35;font-weight:700;color:inherit;overflow-wrap:anywhere;min-width:0}
+.inbox-email:hover{text-decoration:underline;text-underline-offset:4px;color:#1d622c}
+.inbox-email:focus-visible{outline:3px solid #6e9d50;outline-offset:4px;border-radius:4px}
+@media(max-width:1024px){.enquiry-card .inbox-note{padding:19px 20px;gap:10px}.inbox-explanation{flex-basis:100%;font-size:14px}.enquiry-card .inbox-email strong{font-size:19px}}
+@media(max-width:760px){.enquiry-card .inbox-note{padding:20px;gap:12px}.enquiry-card .inbox-email strong{font-size:20px}}
+@media(max-width:390px){.enquiry-card .inbox-note{padding:18px 14px}.inbox-email{gap:8px}.inbox-email svg{width:24px;height:24px}.enquiry-card .inbox-email strong{font-size:17px}.inbox-explanation{font-size:13px}}
