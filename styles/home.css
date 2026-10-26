@@ -79,3 +79,6 @@
 @media(max-width:760px){.faq-section{padding:45px 0 50px}.faq-container{width:calc(100% - 48px)}.faq-heading{margin-bottom:30px}.faq-heading h2{font-size:36px;line-height:1.15;letter-spacing:-1.2px;margin-bottom:20px}.faq-heading p{font-size:16px;line-height:1.6}.faq-desktop-break{display:none}.faq-item{border-radius:12px}.faq-item summary{font-size:18px;padding:22px 20px;gap:20px}.faq-item summary::after{width:13px;height:13px;margin-right:3px}.faq-answer{padding:0 20px 22px}.faq-answer p{font-size:16px;line-height:1.65}.faq-list{gap:16px}}
 @media(max-width:390px){.faq-container{width:calc(100% - 36px)}.faq-heading h2{font-size:32px}.faq-item summary{font-size:17px;padding:20px 16px;gap:18px}.faq-answer{padding:0 16px 20px}.faq-answer p{font-size:15px}}
 @media(prefers-reduced-motion:reduce){.faq-item summary::after{transition:none}}
+
+/* Original white transparent footer artwork, displayed without filters or cropping. */
+.standard-footer .footer-dino{mix-blend-mode:normal}.standard-footer .footer-dino img{position:static;width:100%;height:100%;max-width:100%;object-fit:contain;object-position:left center;filter:none;mix-blend-mode:normal}
