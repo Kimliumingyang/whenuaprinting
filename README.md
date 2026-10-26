@@ -45,3 +45,9 @@ Flyer prices: A5 500/$89, 1000/$139, 2000/$288; A4 500/$134, 1000/$230, 2000/$53
 `about.html` implements the supplied About us layout with the split hero, vertical heading, four story paragraphs, logo watermark and three review cards. It is linked from every page and included in the deployment workflow. Styles are in `styles/about.css`.
 
 The original About us photographs are connected: `assets/about-service.jpg` for the customer handover and `assets/about-delivery.jpg` for the delivery section. Review cards are explicitly labelled as sample testimonials from the supplied design pending confirmation of authentic customer feedback.
+
+## Homepage direct enquiry email
+
+Only the homepage form sends directly via FormSubmit AJAX to `whenuaprinting@gmail.com`. It requires name, phone number, company name, product and quantity; project details are optional. The mailbox owner must activate the FormSubmit destination using the confirmation email triggered by the first real submission. Check spam as well. End-to-end email delivery is not verified until activation and a real mailbox receipt are confirmed. Frontend success means the service accepted the submission, not proof of mailbox delivery.
+
+Visitor details are sent to FormSubmit; the homepage discloses this. No mail password or API secret is embedded. Failed or unconfirmed submissions retain the entered values and offer a copy/email fallback. Product-page forms retain their existing email-app workflow and email field. Automated tests mock the external service and do not send test emails.
