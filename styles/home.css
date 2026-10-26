@@ -97,3 +97,8 @@
 .home-explore-card:hover{background:#386e31;box-shadow:0 8px 22px #214d2025}
 @media(max-width:760px){.home-explore-card{border-radius:19px;aspect-ratio:auto}.home-explore-inner{padding:18cqw 10cqw}.home-explore-eyebrow{font-size:4cqw;letter-spacing:.5cqw;margin-bottom:12cqw}.home-explore-card h2{font-size:11.5cqw;margin-bottom:13cqw}.home-explore-action{font-size:6cqw;padding-top:7cqw}.home-explore-action>span{font-size:8cqw}}
 @media(prefers-reduced-motion:reduce){.home-explore-card{transition:none}}
+
+/* Complete original white logo replaces the separate footer mark and wordmark. */
+.standard-footer .footer-brand{display:flex;align-items:center;width:100%;max-width:393px;height:auto;min-height:105px;gap:0}
+.standard-footer .footer-logo-image{display:block;position:static;width:100%;max-width:100%;height:auto;object-fit:contain;filter:none;mix-blend-mode:normal}
+@media(max-width:1024px){.standard-footer .footer-brand{max-width:300px;min-height:0}}
