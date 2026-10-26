@@ -79,3 +79,5 @@ Ten user-provided questions and answers are reproduced in the native details/sum
 ## How it works
 
 `how-it-works.html` is the standalone process page, using existing original photographs, the three-step illustration set, supplied FAQ answers and ordering terms. It covers enquiry, quoting, written artwork approval/payment, production and delivery, with preparation guidance and shared direct enquiry modals. Global How it works navigation, the preview selector and Pages deployment are connected; the homepage process section remains in place. Styles are in `styles/how-it-works.css`.
+
+The original homepage enquiry background is `assets/quote-banner.jpg.png`. The How it works page now includes all ten original FAQ questions and answers; its footer FAQs link remains on the process page rather than navigating to the homepage.

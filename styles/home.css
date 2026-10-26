@@ -82,3 +82,7 @@
 
 /* Original white transparent footer artwork, displayed without filters or cropping. */
 .standard-footer .footer-dino{mix-blend-mode:normal}.standard-footer .footer-dino img{position:static;width:100%;height:100%;max-width:100%;object-fit:contain;object-position:left center;filter:none;mix-blend-mode:normal}
+
+/* Original bottom enquiry background. */
+.quote-section .quote-photo{object-position:center center}.quote-section:after{background:linear-gradient(90deg,#faf5e899 0%,#faf5e870 48%,#faf5e810 100%)}
+@media(max-width:760px){.quote-section:after{background:#faf5e8c9}}
