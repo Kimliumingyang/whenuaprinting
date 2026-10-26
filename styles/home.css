@@ -36,3 +36,19 @@
 .custom-card .mini-dino img{width:180.72%;max-width:none;height:auto;position:absolute;left:-34.34%;top:-97.89%}
 @media(max-width:760px){.custom-card .custom-button{width:100%}.custom-card-inner{padding:13cqw 9cqw}.custom-card h2{font-size:9cqw}.custom-card p{font-size:4.5cqw;line-height:1.4}.custom-card .custom-eyebrow{font-size:4cqw;letter-spacing:.6cqw}.custom-card .custom-button{font-size:4.5cqw;min-height:16cqw;border-radius:5cqw}.custom-card .mini-dino{width:15cqw;height:8.58cqw}}
 @media(prefers-reduced-motion:reduce){.custom-card .custom-button{transition:none}}
+
+/* Standard footer supplied by Whenua Printing. Policy links await final copy. */
+.site-footer.standard-footer{background:#286722;color:#fff;padding:88px 0 52px}
+.standard-footer .footer-grid{grid-template-columns:minmax(0,1.35fr) minmax(0,1fr) minmax(340px,1fr);gap:80px}
+.standard-footer .footer-brand{height:105px;gap:13px}
+.standard-footer .footer-brand-column p{font-size:24px;line-height:1.4;font-weight:400;margin-top:26px;color:#fff}
+.standard-footer .footer-policies{display:flex;flex-direction:column;gap:12px;padding-top:85px}
+.standard-footer .footer-policies a,.standard-footer .policy-label{font-size:24px;line-height:1.35;font-weight:400;display:block}
+.standard-footer .footer-contact h3{font-size:28px;margin:44px 0 12px}
+.standard-footer .contact-link,.standard-footer .social-label{display:flex;align-items:center;gap:16px;font-size:21px;line-height:1.5;margin:8px 0}
+.standard-footer .contact-link svg,.standard-footer .social-label svg{width:32px;height:32px;flex:none}
+.standard-footer .social-label>span{font-size:inherit;line-height:inherit}
+.standard-footer .legal{border-top:1px solid #d8e3d3;margin-top:85px;padding:24px 46px 0;font-size:16px}
+@media(max-width:1300px){.standard-footer .footer-grid{grid-template-columns:minmax(0,1.2fr) minmax(0,1fr) minmax(280px,1fr);gap:45px}.standard-footer .footer-brand{gap:8px}.standard-footer .footer-brand-column p{font-size:21px}.standard-footer .footer-policies a,.standard-footer .policy-label{font-size:21px}.standard-footer .contact-link,.standard-footer .social-label{font-size:18px;gap:12px}.standard-footer .footer-contact h3{font-size:25px}}
+@media(max-width:1024px){.site-footer.standard-footer{padding:55px 0 35px}.standard-footer .footer-grid{grid-template-columns:1fr 1fr;gap:35px}.standard-footer .footer-brand-column{grid-column:1/-1}.standard-footer .footer-brand{width:300px;height:85px}.standard-footer .footer-brand-column p{font-size:20px;margin-top:17px}.standard-footer .footer-policies{padding-top:8px;gap:14px}.standard-footer .footer-contact{grid-column:auto}.standard-footer .footer-contact h3{margin:0 0 12px}.standard-footer .legal{margin-top:55px;padding-inline:0}.standard-footer .footer-policies a,.standard-footer .policy-label{font-size:21px}}
+@media(max-width:600px){.standard-footer .footer-grid{grid-template-columns:1fr;gap:32px}.standard-footer .footer-brand-column{grid-column:auto}.standard-footer .footer-contact{grid-column:auto}.standard-footer .footer-brand-column p{font-size:19px}.standard-footer .footer-policies{padding-top:0;gap:12px}.standard-footer .footer-policies a,.standard-footer .policy-label{font-size:20px}.standard-footer .footer-contact h3{font-size:25px}.standard-footer .contact-link,.standard-footer .social-label{font-size:17px;gap:12px}.standard-footer .legal{margin-top:40px;font-size:13px}}

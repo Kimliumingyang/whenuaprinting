@@ -3,3 +3,7 @@
 ## Something else product gallery
 
 The homepage green Something else card follows the supplied design, including the dinosaur and Explore more button. It scales with its grid width. The separate Something else product-style page will contain many images; wait for the user’s forthcoming Figma design and assets before implementing it. For now Explore more opens the shared enquiry modal with Something else selected. When the gallery is built, point Explore more to the new page and retain an enquiry action there.
+
+## Standard footer and policies
+
+The standard three-column footer is applied to all public pages. The user will supply Refund Policy, Privacy Policy and Term and Conditions content; create standalone pages and replace the matching data-policy labels with real links once provided. Do not invent policy text. Facebook and Instagram are currently non-linked labels pending confirmed account URLs. FAQs currently links to the existing How it works section.
