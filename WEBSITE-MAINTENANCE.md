@@ -82,3 +82,7 @@
 ## 2026-10-27 代码整理
 
 HTML、CSS、JavaScript 已统一格式化。原 scripts/home.js 按职责拆为 navigation.js、quote.js、search.js，并按此顺序加载；产品脚本随后加载。完整文件职责见 README.md。格式配置在 .prettierrc.json。此轮整理保留原有样式覆盖顺序与原生询价流程。
+
+## 2026-10-29 正式询价页 Banner
+
+quote.html 使用 assets/Customer joins print consultation.png 原图（用户上传的咨询场景），标题 Tell us what you need.。Banner 桌面高 220–280px、手机高 175px；手机将表格置于介绍前，减少开始填写前的滚动。主页 Banner 保持原样。
