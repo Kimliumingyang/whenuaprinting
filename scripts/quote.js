@@ -85,11 +85,11 @@ document.getElementById('copyEnquiry').addEventListener('click', async () => {
   try {
     await navigator.clipboard.writeText(body);
     emailStatus.textContent =
-      'Enquiry copied. Paste it into an email to whenuaprinting@gmail.com and send it there.';
+      'Enquiry copied. Paste it into an email to info@whenuaprinting.com and send it there.';
   } catch {
     enquiryText.focus();
     enquiryText.select();
     emailStatus.textContent =
-      'Select and copy the message below, then email it to whenuaprinting@gmail.com.';
+      'Select and copy the message below, then email it to info@whenuaprinting.com.';
   }
 });

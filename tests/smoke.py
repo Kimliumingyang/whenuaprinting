@@ -34,7 +34,7 @@ def check_site(origin, browser):
 
     # Fail closed for external traffic, then explicitly mock the email endpoint.
     page.route("https://**/*", lambda route: route.abort())
-    page.route("https://formsubmit.co/whenuaprinting@gmail.com", intercept_email)
+    page.route("https://formsubmit.co/info@whenuaprinting.com", intercept_email)
 
     for width in (320, 390, 768, 1440):
         page.set_viewport_size({"width": width, "height": 1000})

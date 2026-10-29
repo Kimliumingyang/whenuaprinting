@@ -57,7 +57,7 @@
 
 ## 询价和邮件（修改前必读）
 
-- 收件邮箱：whenuaprinting@gmail.com。
+- 收件邮箱：info@whenuaprinting.com。
 - 客户字段：姓名、邮箱、电话、公司、产品、数量；Project details 可选。
 - FormSubmit 原生 POST，target=_top；客户邮箱字段必须 name=email。
 - 使用 _autoresponse、_replyto、_next 跳到 thank-you.html；保留 reCAPTCHA。不要为了留在页面而随意改回 AJAX，否则可能影响自动回复。

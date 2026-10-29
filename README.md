@@ -75,7 +75,7 @@ For an existing system Chromium, set `CHROMIUM_EXECUTABLE=/path/to/chromium`. Th
 
 ## Enquiry and content notes
 
-Forms POST natively to FormSubmit for `whenuaprinting@gmail.com`, retaining service verification and automatic customer acknowledgements. No mailbox credentials are stored. Do not replace the native submission with AJAX or disable CAPTCHA without checking the service's acknowledgement requirements. See [CUSTOMER-AUTOREPLY.md](CUSTOMER-AUTOREPLY.md).
+Forms POST natively to FormSubmit for `info@whenuaprinting.com`, retaining service verification and automatic customer acknowledgements. No mailbox credentials are stored. Do not replace the native submission with AJAX or disable CAPTCHA without checking the service's acknowledgement requirements. See [CUSTOMER-AUTOREPLY.md](CUSTOMER-AUTOREPLY.md).
 
 Prices are indicative NZD; final specifications, GST, delivery and availability are confirmed by quote. The 22 merchandise images illustrate potential products rather than confirmed stock. Their mapping is recorded in [MERCHANDISE-CATALOGUE.md](MERCHANDISE-CATALOGUE.md). Legal text comes from the supplied policies and Terms DOCX. About-page reviews are labelled sample testimonials pending authentic feedback. Social profile URLs are still awaiting confirmation.
 
