@@ -485,3 +485,21 @@
     max-width: 240px;
   }
 }
+
+/* Supporting brand line stays inside the compact banner. */
+.quote-page .quote-hero .hero-content {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.quote-hero-tagline {
+  margin: 14px 0 0;
+  color: #315c3c;
+  font-size: clamp(16px, 1.5vw, 21px);
+  line-height: 1.4;
+}
+@media (max-width: 760px) {
+  .quote-hero-tagline {
+    margin-top: 10px;
+  }
+}
